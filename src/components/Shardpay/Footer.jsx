@@ -1,22 +1,21 @@
 import React from "react";
 
-import logo from "../../../images/logo1.jpeg";
+import logo from "../../../images/bobdaofull.png";
 import insta from "../../../images/insta.jfif.jpg";
 import linkedin from "../../../images/linkedin.png";
 import twitter from "../../../images/twitter.png";
 import facebook from "../../../images/facebook.png";
 
 const Footer = () => (
-  <div className="w-full flex md:justify-center justify-between items-center flex-col p-4 gradient-bg-footer">
+  <div className="w-full flex md:justify-center justify-between items-center flex-col py-4 gradient-bg-footer mb-0">
     <div className="w-full flex sm:flex-row flex-col justify-between items-center my-4">
       <div className="flex flex-[0.2] justify-center items-center">
         <span className="text-white flex flex-row  justify-center items-center p-2">
           <img
             src={logo}
             alt="logo"
-            className="w-16 rounded-full p-2 cursor-pointer"
+            className="w-32 rounded-full p-2 cursor-pointer"
           />
-          Transact
         </span>
       </div>
       <div className="flex flex-[0.25] flex-row">

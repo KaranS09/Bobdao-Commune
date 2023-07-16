@@ -1,13 +1,12 @@
 import { formes } from "./components";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Shardpay from "../src/components/Shardpay/Shardpay";
-import SharDefi from "./components/SharDefi/SharDefi";
 import Navbar from "./components/Shardpay/Navbar";
 import Landing from "./components/Landing/Landing";
-import Unify from "./components/Unify/unify";
+// import Unify from "./components/Unify/unify";
 import Forms from "./components/Forms";
 import Profile from "./components/Profile";
-import Buttons from "./components/Buttons/Buttons";
 
 const App = () => {
   return (
@@ -17,29 +16,12 @@ const App = () => {
       </div>
       <div>
         <BrowserRouter>
-          <Switch>
-            <Route path="/Shardpay">
-              <Shardpay />
-            </Route>
-            <Route path="/Buttons">
-              <Buttons />
-            </Route>
-            <Route path="/Profile">
-              <Profile />
-            </Route>
-            <Route path="/forms">
-              <Forms />
-            </Route>
-            <Route path="/SharDefi">
-              <SharDefi />
-            </Route>
-            <Route path="/Unify">
-              <Unify />
-            </Route>
-            <Route path="/">
-              <Landing />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path="ShardPay" element={<Shardpay />} />
+            <Route path="Profile" element={<Profile />} />
+            <Route path="Forms" element={<Forms />} />
+            <Route path="/" element={<Landing />} />
+          </Routes>
         </BrowserRouter>
       </div>
     </div>

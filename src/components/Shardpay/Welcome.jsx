@@ -47,11 +47,12 @@ const Welcome = () => {
         <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
           <div className="flex flex-1 justify-start flex-col mf:mr-10">
             <h1 className="text-3xl sm:text-5xl text-white bg-gradient-to-r from-violet-600 via-red-500 to-green-400 inline-block text-transparent bg-clip-text py-1 mb-4">
-              Unify
+              BitPay
             </h1>
             <img src={img} alt="img" />
             <p className="text-left mt-5 text-white font-light md:w-12/12 w-12/12 text-lg">
-              End to end cohensive ecosystem for the next step in decentralized personal finance.
+              End to end cohensive ecosystem for the next step in decentralized
+              personal finance.
             </p>
             {!currentAccount && (
               <button
@@ -148,7 +149,7 @@ const Welcome = () => {
                     {shortenAddress(currentAccount)}
                   </p>
                   <p className="text-white font-semibold text-lg mt-1">
-                    5irepay
+                    BitPay
                   </p>
                 </div>
               </div>
@@ -162,7 +163,7 @@ const Welcome = () => {
                 handleChange={handleChange}
               />
               <Input
-                placeholder="Amount (ETH)"
+                placeholder="Amount (BFT)"
                 name="amount"
                 type="number"
                 handleChange={handleChange}

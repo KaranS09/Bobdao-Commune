@@ -1,8 +1,5 @@
 import React, { useRef, useState } from "react";
 import { NftStorageHttpService } from "./ap/nftstorage";
-import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
-import { withRouter } from "react-router-dom";
-import Profile from "./Profile";
 
 const Forms = () => {
   const nameInputRef = useRef();
@@ -47,7 +44,10 @@ const Forms = () => {
   const inputStyle = "border border-gray-400 p-2 w-full rounded-lg mb-3";
   return (
     <div className="mx-auto  flex flex-col bg-[#1e1e1e]  items-center h-full bg-[url('/bg2.png')]  bg-center  justify-center gap-10 bg-fixed ">
-      <div className="flex-[0.67] p-8 rounded-xl mt-24 border border-gray-500 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
+      <button className="buton mt-16 text-xl">
+        <a href="/forms">Login with web3auth</a>
+      </button>
+      <div className="flex-[0.67] p-8 rounded-xl mt-12 border border-gray-500 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
         <p className="text-4xl font-Grotesk font-semibold mb-8 bg-gradient-to-r text-transparent bg-clip-text from-[#FD42FB] via-[#CD9ECD] to-[#753FF3]">
           Create a Profile here!
         </p>

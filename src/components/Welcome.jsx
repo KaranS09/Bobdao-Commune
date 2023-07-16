@@ -6,6 +6,7 @@ import { TransactionContext } from "../context/TransactionContext";
 import { Loader } from "./";
 import { shortenAddress } from "../utils/shortenAddress";
 import img from "../assets/imageHeader.png";
+import Footer from "./Shardpay/Footer";
 
 const companyCommonStyles =
   "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
@@ -42,17 +43,17 @@ const Welcome = () => {
   };
 
   return (
-    <div>
+    <div className="bg-img1 w-full overflow-hidden">
       <div className="flex w-full justify-center items-center">
         <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
           <div className="flex flex-1 justify-start flex-col mf:mr-10">
-            <h1 className="text-3xl sm:text-5xl text-white bg-gradient-to-r from-violet-600 via-red-500 to-green-400 inline-block text-transparent bg-clip-text py-1 mb-4">
-              Send Crypto across the world
+            <h1 className="editinghuh font-poppins text-blue font-semibold ss:text-[90px] text-[40px] text-white ss:leading-[100.8px] leading-[75px] text-center">
+              BOBDAO <br />
+              COMMUNE
             </h1>
-            <img src={img} alt="img" />
-            <p className="text-left mt-5 text-white font-light md:w-12/12 w-12/12 text-lg">
-              Explore the crypto world. Buy and sell cryptocurrencies easily
-              with our web app.
+
+            <p className="text-left mt-5 text-white font-light md:w-12/12 w-12/12 text-lg text-center">
+              Learn | Develop | Earn
             </p>
             {!currentAccount && (
               <button
@@ -68,7 +69,6 @@ const Welcome = () => {
           </div>
         </div>
       </div>
-      <div className="h-[1px] w-full bg-gray-500 my-0" />
     </div>
   );
 };
